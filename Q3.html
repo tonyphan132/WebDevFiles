@@ -9,22 +9,60 @@
     <table>
         <tr>
             <td><h1>Music Lover's Survey</h1></td>
-            <td><a href="https://upload.wikimedia.org/wikipedia/commons/2/24/Lenny_face.png"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Lenny_face.png" alt="Lenny Face" width="200px" height="100"></a></td>
+            <td><a href="https://upload.wikimedia.org/wikipedia/commons/2/24/Lenny_face.png"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Lenny_face.png" alt="Lenny Face" width="200" height="100"></a></td>
         </tr>
         
     </table>
     
-    <form action="">
+    <form method="post">
         <fieldset>
             <legend>Music Lover's Personal Information</legend>
-            <label>First Name <input type="text" name="" id=""></label><br><br>
-            <label>Family Name <input type="text" name="" id=""></label><br><br>
+            <label>First Name <input type="text" name="fname" id="first_name"></label><br><br>
+            <label>Family Name <input type="text" name="lname" id="last_name"></label><br><br>
             
             Gender: 
-            <label><input type="radio" name="GenderSelect" id="">Male</label>
-            <label><input type="radio" name="GenderSelect" id="">Female</label>
+            <label><input type="radio" name="GenderSelect" id="GenderSelectMan" value="male">Male</label>
+            <label><input type="radio" name="GenderSelect" id="GenderSelectWoman" value="female">Female</label><br><br>
+            <label>
+                What age group category are you from? 
+                <select name="age_group" id="age">
+                    <option value="">Less than 18</option>
+                    <option value="">18 to 64</option>
+                    <option value="">65 and up</option>
+                  </select>
+            </label>
+            <br><br>
+            <label>Email: <input type="email" name="email" id="user_email"></label>
         </fieldset>
-    
+        <br>
+
+
+        <fieldset>
+            <legend>Survery Questions</legend>
+            Which type of music do you listen to? (Pick as many as apply) <br>
+            <label><input type="checkbox" name="blues_pref" id="blues_cbox">Blues</label>
+            <label><input type="checkbox" name="classic_pref" id="classic_cbox">Classical music</label>
+            <label><input type="checkbox" name="em_pref" id="em_cbox">Electronic music</label>
+            <br>
+            <label><input type="checkbox" name="hip_rap_pref" id="hip_rap_cbox">Hip hop/Rap</label>
+            <label><input type="checkbox" name="pop_pref" id="pop_cbox">Pop (Popular music)</label>
+            <label><input type="checkbox" name="reggae_pref" id="reggae_cbox">Reggae</label> <br>
+            <label><input type="checkbox" name="other_pref" id="other_cbox">Other</label>
+
+            <p>
+            List your 3 favourite artist/bands: <br>
+            <input type="text"> <input type="text"> <input type="text">
+            </p>
+            If you were to win tickets which show would you like 2 tickets to? <br>
+            <label><input type="radio" name="win_ticket" id="bf_ticket">BRIT FLOYD (March 24, 2016)</label>
+            <label><input type="radio" name="win_ticket" id="im_ticket">IRON MAIDEN (April 1, 2016)</label>
+            <label><input type="radio" name="win_ticket" id="jj_ticket">JANET JACKSON (June 17, 2016)</label>
+            <label><input type="radio" name="win_ticket" id="adele_ticket">ADELE (September 30, 2016)</label>
+            
+        </fieldset>
+        <p>Thank you for taking the time to fill out our survey!</p>
+        <input type="submit">
+        <input type="reset">
     </form>
     
 </body>
