@@ -1,0 +1,16 @@
+#first, #second{
+    padding: 5px;
+    border: green 2px dotted;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    left: 40%;
+}
+#first{
+    top: 50px;
+}
+.red{
+    color: red;
+    font-weight: bold;
+}

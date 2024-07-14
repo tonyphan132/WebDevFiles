@@ -5,11 +5,19 @@ ul{
 li{
     margin-top: 0px;
     width: 175px;
-    padding: 10px;
 }
+
+li a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 12px;
+}
+
 .active{
     background-color: green;
 }
+
 .non-active{
     background-color: lightgrey;
 }
@@ -19,3 +27,4 @@ li{
     color: white;
     transition: .35s;
 }
+
