@@ -9,11 +9,10 @@
 <body>
     <header>
         <div class="header">
-            
             <div class="title">
                 <a href="home.html"><b>Tony's Pet Adoption Website</b></a>
             </div>
-            <a href="home.html">
+            <a href="home.html" id="clickable-dog">
                 <img src="https://png.pngtree.com/png-vector/20230302/ourmid/pngtree-happy-cartoon-dog-vector-png-image_6625750.png" alt="Image of a hand-drawn dog" id="dog-img">
             </a>
         </div>
@@ -22,39 +21,39 @@
         <nav>
             <ul>
                 <li>
-                    <a href="home.html">Home Page</a>
+                    <a href="home.html" class="active-page">Home Page</a>
                 </li>
                 <li>
-                    <a href="browse.html">Browse Available Pets</a>
+                    <a href="browse.html" class="non-active-page">Browse Available Pets</a>
                 </li>
                 <li>
-                    <a href="">Find a dog/cat</a>
+                    <a href="find_pet.html" class="non-active-page">Find a dog/cat</a>
                 </li>
                 <li>
-                    <a href="">Dog Care</a>
+                    <a href="dogcare.html" class="non-active-page">Dog Care</a>
                 </li>
                 <li>
-                    <a href="">Cat Care</a>
+                    <a href="catcare.html" class="non-active-page">Cat Care</a>
                 </li>
                 <li>
-                    <a href="">Have a pet to give away</a>
+                    <a href="pet_giveaway.html" class="non-active-page">Have a pet to give away</a>
                 </li>
                 <li>
-                    <a href="">Contact Us</a>
+                    <a href="contact.html" class="non-active-page">Contact Us</a>
                 </li>
             </ul>
         </nav>
         <main>
-            <p class="home-page">
+            <div class="home-page">
                 <b>Welcome! To Tony's Pet Adoption Website</b><br><br>
                 We are your go-to website for adoption cute and adorable pets!<br>
                 Below you can browse some of our satisfied customers <br> and read their testimonials!
-                
-                
-            </p>
-            <h2>
+            </div>
+            <br><br>
+            <h2 class="testimonials">
                 Testimonials
             </h2>
+            
             <table id="dog-table">
                 <tr>
                     <td>Pet Name: Cindy</td>

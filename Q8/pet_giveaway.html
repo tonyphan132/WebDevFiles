@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylingsheets/Q8sheet.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="title">
+                <a href="home.html"><b>Tony's Pet Adoption Website</b></a>
+            </div>
+            <a href="home.html" id="clickable-dog">
+                <img src="https://png.pngtree.com/png-vector/20230302/ourmid/pngtree-happy-cartoon-dog-vector-png-image_6625750.png" alt="Image of a hand-drawn dog" id="dog-img">
+            </a>
+        </div>
+    </header>
+    <div class="mainbody-nav">
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html" class="non-active-page">Home Page</a>
+                </li>
+                <li>
+                    <a href="browse.html" class="non-active-page">Browse Available Pets</a>
+                </li>
+                <li>
+                    <a href="find_pet.html" class="non-active-page">Find a dog/cat</a>
+                </li>
+                <li>
+                    <a href="dogcare.html" class="non-active-page">Dog Care</a>
+                </li>
+                <li>
+                    <a href="catcare.html" class="non-active-page">Cat Care</a>
+                </li>
+                <li>
+                    <a href="pet_giveaway.html" class="active-page">Have a pet to give away</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="non-active-page">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="home-page">
+                <b>Register a pet to give away!</b>
+            </div>
+            <form action="" id="find-pet-form">
+    
+                <label>
+                    Is it a cat or a dog? <br>
+                    <select name="animal-type" id="animal-type-select-give">
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                    </select>
+                </label>
+                
+                <label>
+                    Bread of the animal?<br>
+                    <input type="text" name="breed" id="breed-give" placeholder="Bread">
+                </label>
+
+                <label>
+                    Age of animal<br>
+                    <select name="age" id="age-select"> 
+                        <option value="under-1">Under 1 year old</option>
+                        <option value="1-to-3">1 to 3 years old</option>
+                        <option value="3-to-7">3 to 7 years old</option>
+                        <option value="7-to-14">7 to 14 years old</option>
+                        <option value="14-up">14+ years old</option>
+                    </select>
+                </label>
+
+                <label>
+                    Animal's gender <br>
+                    <select name="gender" id="gender-select-give">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="not-matter">Doesn't matter</option>
+                    </select>
+                </label>
+
+                <label>
+                    Check all that applies: <br>
+                    <label><input type="checkbox" name="along-kids-give" id="along-kids-give">Suitable for families with small kids?</label> <br>
+                    <label><input type="checkbox" name="other-dogs-give" id="other-dogs-give">Gets along with other dogs?</label> <br>
+                    <label><input type="checkbox" name="other-cats-give" id="other-cats-give">Gets along with other cats?</label>
+                </label>
+
+                <label>
+                    Other comments <br>
+                    <input type="text" name="" id="comments-give">
+                </label>
+
+                <label>
+                    Current owner's Last name <br>
+                    <input type="text" name="owner-lname" id="owner-lname" placeholder="Last Name">
+                </label>
+
+                <label>
+                    Current owner's First name <br>
+                    <input type="text" name="owner-fname" id="owner-fname" placeholder="First Name">
+                </label>
+
+                <label>
+                    Current owner's email address <br>
+                    <input type="email" name="owner-email" id="owner-email" placeholder="Email">
+                </label>
+                
+                <div class="submit-reset">
+                    <input type="submit" name="submit" id="submit">
+                    <input type="reset" name="reset" id="reset">
+                </div>
+                
+            </form>
+        </main>
+    </div>
+    
+    <footer>
+        <a href="privacy.html">Privacy / Disclaimer Statement</a>
+    </footer>
+
+    
+</body>
+</html>

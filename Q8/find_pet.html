@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylingsheets/Q8sheet.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="title">
+                <a href="home.html"><b>Tony's Pet Adoption Website</b></a>
+            </div>
+            <a href="home.html" id="clickable-dog">
+                <img src="https://png.pngtree.com/png-vector/20230302/ourmid/pngtree-happy-cartoon-dog-vector-png-image_6625750.png" alt="Image of a hand-drawn dog" id="dog-img">
+            </a>
+        </div>
+    </header>
+    <div class="mainbody-nav">
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html" class="non-active-page">Home Page</a>
+                </li>
+                <li>
+                    <a href="browse.html" class="non-active-page">Browse Available Pets</a>
+                </li>
+                <li>
+                    <a href="find_pet.html" class="active-page">Find a dog/cat</a>
+                </li>
+                <li>
+                    <a href="dogcare.html" class="non-active-page">Dog Care</a>
+                </li>
+                <li>
+                    <a href="catcare.html" class="non-active-page">Cat Care</a>
+                </li>
+                <li>
+                    <a href="pet_giveaway.html" class="non-active-page">Have a pet to give away</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="non-active-page">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="home-page">
+                <b>Find a dog/cat!</b>
+            </div>
+            <form action="" id="find-pet-form">
+    
+                <label>
+                    Would you like a dog or a cat? <br>
+                    <select name="animal-type" id="animal-type-select">
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                    </select>
+                </label>
+                
+                <label>
+                    Breed of dog/cat? <br>
+                    <select name="breed" id="breed-select">
+                        <option value="not-matter">Doesn't matter</option>
+                        <option value="labrador">Labrador (Dog)</option>
+                        <option value="poodle">Poodle (Dog)</option>
+                        <option value="bulldog">Bulldog (Dog)</option>
+                        <option value="siamese">Siamese (Cat)</option>
+                        <option value="persian">Persian (Cat)</option>
+                        <option value="bengal">Bengal (Cat)</option>
+                        <option value="maine">Maine (Cat)</option>
+                    </select>
+                </label>
+
+                <label>
+                    Preferred age of animal<br>
+                    <select name="age" id="age-select"> 
+                        <option value="not-matter">Doesn't matter</option>
+                        <option value="under-1">Under 1 year old</option>
+                        <option value="1-to-3">1 to 3 years old</option>
+                        <option value="3-to-7">3 to 7 years old</option>
+                        <option value="7-to-14">7 to 14 years old</option>
+                    </select>
+                </label>
+
+                <label>
+                    Preferred gender <br>
+                    <select name="gender" id="gender-select">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="not-matter">Doesn't matter</option>
+                    </select>
+                </label>
+
+                <label>
+                    Does it need to get along with: <br>
+                    <label><input type="checkbox" name="along-kids" id="along-kids">Kids?</label>
+                    <label><input type="checkbox" name="other-dogs" id="other-dogs">Other dogs?</label>
+                    <label><input type="checkbox" name="other-cats" id="other-cats">Other cats?</label>
+                </label>
+                
+                <div class="submit-reset">
+                    <input type="submit" name="submit" id="submit">
+                    <input type="reset" name="reset" id="reset">
+                </div>
+                
+            </form>
+        </main>
+    </div>
+    
+    <footer>
+        <a href="privacy.html">Privacy / Disclaimer Statement</a>
+    </footer>
+
+    
+</body>
+</html>

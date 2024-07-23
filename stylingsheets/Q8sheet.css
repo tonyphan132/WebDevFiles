@@ -1,47 +1,75 @@
 body{
     margin: 0px;
-    height: 100%;
 }
 
 .title a{
     text-decoration: none;
     color: black;
+    overflow: hidden;
 }
 
 .header{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: lightgoldenrodyellow;
     text-align: center;
-    height: 7vh;
+    min-height: 9vh;
+    overflow: hidden;
 }
 
 .title{
-    position: relative;
     font-size: 32px;
-    display: inline;
-    left: 110px;
+    margin-left: 15px;
+}
+
+#clickable-dog{
+    display: inline-block;
+    height: 9vh;
+    padding: 0px;
+    margin: 0px;
 }
 
 #dog-img{
-    width: 25%;
+    display: block;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 nav{
     background-color: lightblue;
-    width: 8%;
-    height: 86vh;
+    min-width: 10vw;
+    min-height: 84vh;
 }
 
 nav ul{
     list-style-type: none;
-    margin-top: 0px;
-    padding-left: 8px;
+    margin: 0px;
+    padding-left: 0px;
+    
 }
 
 li{
-    padding-top: 12px;
+    padding-top: 0px;
+}
+
+li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 12px;
+}
+
+
+.non-active-page:hover{
+    background-color: pink;
+}
+
+.active-page{
+    background-color: palegreen;
 }
 
 .mainbody-nav{
@@ -54,33 +82,40 @@ main{
     align-items: center;
     background-color: lightgray;
     width: 92%;
+    overflow: hidden;
 }
 
 .home-page{
-    border: solid black;
-    height: 310px;
     margin-top: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-size: 24px;
     text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
     
 }
 
 #dog-table{
     border: solid black;
-    position: relative;
-    
 }
 
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 7vh;
+    min-height: 7vh;
     background-color: grey;
 }
+
 table{
     width: 75%;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
 td{
     text-align: center;
     width: 2%;
@@ -94,8 +129,89 @@ td{
 #dog-img-4{
     width: 100%;
 }
-h2{
+
+.testimonials{
     color: blueviolet;
     margin-top: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
+
+#find-pet-form{
+    display: flex;
+    flex-direction: column;
+    min-width: 70vw;
+    min-height: 60vh;
+    margin-top: 15px;
+    
+}
+
+label{
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+select{
+    min-width: 35vw;
+}
+
+input[type="submit"], input[type="reset"]{
+    max-width: 60px;
+    transition: 0.4s;
+    margin-top: 15px;
+}
+
+
+.animal-care-content p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.animal-care-content li{
+    margin-top: 10px;
+}
+
+.animal-care-content{
+    font-size: 1.25rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.animal-care-content ul{
+    margin-left: 15px;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+
+
+#comments-give{
+    min-width: 35vw;
+    min-height: 15vh;
+}
+@media (max-width: 600px){
+    nav{
+        min-width: 100vw;
+        min-height: 20vh;
+    }
+
+    .mainbody-nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    li a{
+        text-align: center;
+    }
+
+    main{
+        min-width: 100vw;
+        min-height: 52vh;
+    }
+
+}
+
